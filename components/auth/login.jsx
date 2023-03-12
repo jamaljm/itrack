@@ -32,16 +32,16 @@ export default function Login() {
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen">
         <div className="relative flex items-end rounded-full px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
           <div className="absolute inset-0 rounded-full">
-            {/* <video className="object-cover w-full h-full" src="https://images.pexels.com/photos/565324/pexels-photo-565324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" autoPlay="true" /> */}
-            <img
+            <video className="object-cover w-full h-full" src="/vid.mp4" autoPlay="true" />
+            {/* <img
               className="object-cover w-full h-full  "
               src="/login.jpg"
-            ></img>
+            ></img> */}
           </div>
           <div className="absolute rounded-full align-middle inset-0 bg-gradient-to-t from-black to-transparent"></div>
 
           <div className="relative flex justify-center items-center ">
-            <div className="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-xl">
+            {/* <div className="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-xl">
               <ul className="grid grid-cols-1 mt-10 sm:grid-cols-2 gap-x-8 gap-y-4">
                 <li className="flex items-center space-x-3">
                   <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
@@ -115,14 +115,14 @@ export default function Login() {
                   <span className="text-lg font-medium text-white"> Your </span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 
         <div className="flex items-center justify-center px-4 py-10  bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
           <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
             <h2 className="text-3xl font-display leading-tight text-black sm:text-4xl">
-             Welcome {" "}
+              Welcome{" "}
             </h2>
 
             <form onSubmit={handleLogin} method="POST" className="mt-8">
