@@ -4,7 +4,7 @@ import Sidebar from "../sidebar/Sidebar";
 import router, { useRouter } from "next/router";
 import { useAuth } from "../../context/AuthContext";
 import Stat from "./Stat";
-import Whe from "./Whe";
+import Whe from "./whe";
 import Card from "./Card";
 
 export default function Dashboard() {
