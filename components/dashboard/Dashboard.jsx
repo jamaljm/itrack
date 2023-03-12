@@ -23,7 +23,7 @@ export default function Dashboard() {
       >
         <div className="flex flex-row bg-slate-200 mt-5 py-4 justify-between items-center px-8 rounded-full  w-full h-16">
           <h1 className="text-black  font-body font-clash-display-600 text-center text-2xl font-medium">
-            Dashboard
+            <img className="h-10" src="/logo.png" />
           </h1>
           <div className="flex flex-row justify-center gap-5 items-center">
             <h6 className="font-body font-clash-display-600">
@@ -44,14 +44,14 @@ export default function Dashboard() {
               src="https://cdn.dribbble.com/userupload/4211435/file/original-c985281d1aea952c6eb5dbcd46d2a410.mp4"
               autoPlay="true"
             />
-            <div className="absolute rounded-2xl align-middle inset-0 bg-gradient-to-t from-[#000000] to-[#ffffff]">
+            <div className="absolute rounded-2xl align-middle inset-0 bg-gradient-to-t from-[#717171] to-[#ffffff]">
               <div className="flex px-6 justify-start gap-2 flex-col items-left mt-5 mb-2 py-4">
                 <p className="text-3xl font-body font-clash-display-600 ">
                   Hi {user.displayName}
                 </p>
 
                 <p className="text-3xl font-body font-clash-display-600">
-                  Check your track
+                  Check your weather
                 </p>
               </div>
               <Whe />

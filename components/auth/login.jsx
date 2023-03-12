@@ -32,7 +32,11 @@ export default function Login() {
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen">
         <div className="relative flex items-end rounded-full px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
           <div className="absolute inset-0 rounded-full">
-            <video className="object-cover w-full h-full" src="/vid.mp4" autoPlay="true" />
+            <video
+              className="object-cover w-full h-full"
+              src="/vid.mp4"
+              autoPlay="true"
+            />
             {/* <img
               className="object-cover w-full h-full  "
               src="/login.jpg"
@@ -40,88 +44,12 @@ export default function Login() {
           </div>
           <div className="absolute rounded-full align-middle inset-0 bg-gradient-to-t from-black to-transparent"></div>
 
-          <div className="relative flex justify-center items-center ">
-            {/* <div className="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-xl">
-              <ul className="grid grid-cols-1 mt-10 sm:grid-cols-2 gap-x-8 gap-y-4">
-                <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
-                    <svg
-                      className="w-3.5 h-3.5 text-white"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span className="text-lg font-medium text-white">
-                    {" "}
-                    Your drive track{" "}
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
-                    <svg
-                      className="w-3.5 h-3.5 text-white"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span className="text-lg font-medium text-white"> Your </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
-                    <svg
-                      className="w-3.5 h-3.5 text-white"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span className="text-lg font-medium text-white"> Your </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
-                    <svg
-                      className="w-3.5 h-3.5 text-white"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span className="text-lg font-medium text-white"> Your </span>
-                </li>
-              </ul>
-            </div> */}
-          </div>
+          <div className="relative flex justify-center items-center "></div>
         </div>
 
         <div className="flex items-center justify-center px-4 py-10  bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
           <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-            <h2 className="text-3xl font-display leading-tight text-black sm:text-4xl">
+            <h2 className="text-3xl font-body font-clash-display-600 font- leading-tight text-black sm:text-4xl">
               Welcome{" "}
             </h2>
 
@@ -145,7 +73,7 @@ export default function Login() {
                       value={data.email}
                       required
                       placeholder="Enter email to get started"
-                      className="block w-full py-4 pl-4 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                      className="block w-full py-4 pl-4 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-full bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                     />
                   </div>
                 </div>
@@ -160,14 +88,7 @@ export default function Login() {
                       Password{" "}
                     </label>
 
-                    <Link
-                      href="#"
-                      title=""
-                      className="text-sm font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
-                    >
-                      {" "}
-                      Forgot password?{" "}
-                    </Link>
+                  
                   </div>
                   <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
                     <input
@@ -181,7 +102,7 @@ export default function Login() {
                       }
                       value={data.password}
                       placeholder="Enter your password"
-                      className="block w-full py-4 pl-4 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                      className="block w-full py-4 pl-4 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-full bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                     />
                   </div>
                 </div>
@@ -189,7 +110,7 @@ export default function Login() {
                 <div>
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 border border-transparent rounded-md bg-gradient-to-r bg-black focus:outline-none hover:opacity-80 focus:opacity-80"
+                    className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 border border-transparent rounded-full bg-gradient-to-r bg-black focus:outline-none hover:opacity-80 focus:opacity-80"
                   >
                     Log in
                   </button>
@@ -200,7 +121,7 @@ export default function Login() {
               <button
                 type="button"
                 onClick={handleLoging}
-                class="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none"
+                class="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-full hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none"
               >
                 <div class="absolute inset-y-0 left-0 p-4">
                   <svg
