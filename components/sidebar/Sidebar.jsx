@@ -37,7 +37,7 @@ export default function Sidebaruser() {
 
         <Link
           className="btn flex items-center w-full h-16 justify-center mt-2 m-0 p-0 rounded-xl  hover:bg-gray-700  text-wehite-600 bg-white-100 hover:text-gray-300 "
-          href="/dashboard"
+          href="/map"
         >
           <img src="/icon/map.png" className="w-8 opacity-90" />{" "}
           {/* <span className="ml-2 text-sm font-medium">Home</span> */}

@@ -18,7 +18,7 @@ export default function Dashboard() {
       </div>
 
       <div
-        className="flex relative flex-col px-2 bg-white m-4 px-5 rounded-[40px]"
+        className="flex relative flex-col  bg-white m-4 px-5 rounded-[40px]"
         style={{ flex: 3 }}
       >
         <div className="flex flex-row bg-slate-200 mt-5 py-4 justify-between items-center px-8 rounded-full  w-full h-16">
