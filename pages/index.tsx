@@ -16,15 +16,14 @@ export default function ind() {
     );
   };
   return (
-    <div className="bg-white">
-      <div id="blob" className="blur-xl absolute shadow-inner "></div>
+    <div className="bg-white relative">
       <header className="bg-[#FCF8F1] bg-opacity-30">
         <div className="px-4 mx-auto sm:px-6 lg:px-24">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            <div className="flex-shrink-0">
-              <a href="#" title="" className="flex">
-                <img className="w-auto h-8" src="logo.png" alt="" />
-              </a>
+            <div className="flex-shrink-0 relative">
+              <div id="blob" className="blur-xl absolute shadow-inner "></div>
+
+              <a href="#" title="" className="flex "></a>
             </div>
 
             <button
@@ -75,24 +74,22 @@ export default function ind() {
         </div>
       </header>
 
-      <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+      <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-9">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-            <div>
-              <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
+            <div className="relative ">
+              <img className="w-auto h-24 z-10 mt-10" src="logo.png" alt="" />
+              <h1 className="mt-4  text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
                 Track
               </h1>
               <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
                 Analyse
               </h1>
-              <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
-                Improve
-              </h1>
 
               <a
                 href="/login"
                 title=""
-                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-black rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-black rounded-full lg:mt-16"
                 role="button"
               >
                 Join for free
@@ -114,7 +111,7 @@ export default function ind() {
             </div>
 
             <div>
-              <img className="h-full rounded-2xl" src="/bg.png" alt="" />
+              <img className="h-full rounded-2xl z-500" src="/bg.png" alt="" />
             </div>
           </div>
         </div>
